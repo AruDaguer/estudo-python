@@ -38,4 +38,5 @@ git config --global --unset user.email
 ```
 
 2 - Deletar o token no Github
+
 3 - Deslogar do Github
