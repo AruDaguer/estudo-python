@@ -21,6 +21,8 @@ git clone https://github.com/SEU_USUARIO/lp3-ifsp.git
 
 3 - Abrir o repositório no Vscode 
 
+![Token Gif](https://raw.githubusercontent.com/wiki/kai-tub/external-repo-sync-action/gifs/create_token_short.gif)
+
 
 ```bash
 code lp3-ifsp
