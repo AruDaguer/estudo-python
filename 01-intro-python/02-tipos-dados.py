@@ -1,1 +1,3 @@
-got
+# 1. número 
+
+# int 
