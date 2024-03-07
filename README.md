@@ -16,7 +16,7 @@ git config --global user.email "Seu email"
 2 - Fazer o clone do seu repositório no Github
 
 ```bash
-git clone https://github.com/SEU_USUARIO/lp3-ifsp.git
+git clone https://github.com/SEU_USUARIO/estudo-python.git
 ```
 
 3 - Abrir o repositório no Vscode 
