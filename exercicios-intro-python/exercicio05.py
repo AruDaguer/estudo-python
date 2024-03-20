@@ -7,7 +7,7 @@ from exercicio04 import verificacao
 
 codigo = input('Entre com seu codigo: ')
 
-if verificacao(codigo) == True:
+if verificacao(codigo):
     print('VÁLIDO')
 else:
     print('INVÁLIDO')

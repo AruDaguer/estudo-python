@@ -35,7 +35,7 @@ if idade >= 18:
     print("Maior de idade")
 else:
     print("Menor de idade")
-
+print(a is b) # FALSE
 # operador is
 # os valores do objeto e se ocupam o mesmo
 # espaço de memória
