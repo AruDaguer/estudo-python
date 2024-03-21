@@ -4,11 +4,7 @@ Ex02 - Tabuada de Um Número: Solicite ao usuário um número e exiba a tabuada 
 '''
 
 def tabuada(num):
-    for multiplicador in range(1,11):
-        resultado = multiplicador * num
-        print(f'{num} X {multiplicador} = {resultado}')
-
+    return '\n'.join([f"{num} X {multiplicador} = {num * multiplicador}" for multiplicador in range(1, 11)])
 
 num = int(input('Entre com um numero: '))
 print(tabuada(num))
-

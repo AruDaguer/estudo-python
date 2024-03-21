@@ -4,33 +4,31 @@ O programa deve pedir ao usuário para votar várias vezes e, no final, mostrar 
 
 '''
 
-candidato1 = 1
-candidato2 = 2
-candidato3 = 3
-cont1 = 0
-cont2 = 0
-cont3 = 0
+candidatos = {
+    1: "Candidato1",
+    2: "Candidato2",
+    3: "Candidato3"
+}
 
-for i in range(11):
+votos = {}
+for i in candidatos:
+    votos[i] = 0
+
+num = int(input("Quantos votos deseja simular? "))
+
+for _ in range(num):
     print('Para Candidato1: VOTE 1')
     print('Para Candidato2: VOTE 2')
     print('Para Candidato3: VOTE 3')
     voto = int(input('VOTE: '))
 
-    if voto == 1:
-        cont1 += 1
-    elif voto == 2:
-        cont2 += 1
-    elif voto == 3:
-        cont3 += 1
+    if voto in votos:
+        votos[voto] += 1
+    else:
+        print("Não existe esse candidato")
 
-if cont1 > cont2 and cont1 > cont3:
-    vencedor = candidato1
-elif cont2 > cont1 and cont2 > cont3:
-    vencedor = candidato2
-elif cont3 > cont1 and cont3 > cont2:
-    vencedor = candidato3
+vencedor = max(votos)
 
-print(f'Canditato{vencedor} ganhou')
+print(f'O vencedor é o {candidatos[vencedor]} com {votos[vencedor]} votos.')
 
 

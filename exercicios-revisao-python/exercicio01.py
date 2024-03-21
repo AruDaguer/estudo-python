@@ -6,8 +6,9 @@ Informe ao usuário se o palpite está alto ou baixo, até que ele acerte o núm
 
 import random
 
-def jogo_adivinhacao(num):
+def jogo_adivinhacao():
     aleatorio = random.randint(1,100)
+    num = int(input('Entre com número aleatório (1,100): '))
 
     while True:
         if num == aleatorio:
@@ -19,7 +20,6 @@ def jogo_adivinhacao(num):
         elif num < aleatorio:
             num = int(input('Entre com valor mais alto: '))
 
-num = int(input('Entre com número aleatório (1,100): '))
-jogo_adivinhacao(num)
+jogo_adivinhacao()
     
 
