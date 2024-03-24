@@ -8,11 +8,17 @@ import unicodedata
 frase = unicodedata.normalize('NFKD', input('Digite a frase: ').lower()).encode('ASCII', 'ignore').decode('ASCII')
 
 vogais = 'aeiou'
-consoantes = set(frase) - set(vogais)
-cont_vogais = set(frase) - set(consoantes)
+consoantes = 0
+cont_vogais = 0
 
-print(f'A frase tem {len(cont_vogais)} vogais')
-print(f'A frase tem {len(consoantes)} consoantes')
+for i in frase:
+    if i in vogais:
+        cont_vogais += 1
+    elif i.isalpha():
+        consoantes += 1
+
+print(f'A frase tem {cont_vogais} vogais')
+print(f'A frase tem {consoantes} consoantes')
 
 
 

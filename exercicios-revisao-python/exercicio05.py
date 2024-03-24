@@ -4,10 +4,11 @@ verifique se é um palíndromo (ou seja, pode ser lida de frente para trás e de
 
 '''
 
-str = input('Entre com um palavra ou frase: ')
+str = input('Entre com uma palavra ou frase: ')
+str = str.replace(" ", "").lower()  
 verificador = str[::-1]
 
 if str == verificador:
-    print('É palindromo')
+    print('É palíndromo')
 else:
-    print('Não é palindromo')
+    print('Não é palíndromo')

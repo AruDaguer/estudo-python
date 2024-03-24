@@ -14,7 +14,7 @@ votos = {}
 for i in candidatos:
     votos[i] = 0
 
-num = int(input("Quantos votos deseja simular? "))
+num = int(input("Entre com um numero para simular os votos:  "))
 
 for _ in range(num):
     print('Para Candidato1: VOTE 1')
@@ -27,8 +27,11 @@ for _ in range(num):
     else:
         print("Não existe esse candidato")
 
-vencedor = max(votos)
+vencedor = max(votos, key=votos.get)
 
-print(f'O vencedor é o {candidatos[vencedor]} com {votos[vencedor]} votos.')
+for candidato, voto in votos.items():
+    print(f"{candidatos[candidato]}: {voto} votos")
+
+print(f'{candidatos[vencedor]} venceu com {votos[vencedor]} votos.')
 
 
